@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino Billett Bestilling</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Title</title>
+
+</head>
+<body>
+<h1>NY Bestilling</h1>
+
+<table>
+    <tr>
+        <td style="font-weight: bold">Navn</td>
+        <td><input type="text" id="navn" onchange="validerNavn(this.value)"/>
+            <span id="feilNavn" style="color: red"></span>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td style="font-weight: bold">Mobil</td>
+        <td><input type="number" id="mobil" onchange="validerMobil(this.value)"/>
+            <span id="feilMobil" style="color: red"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="font-weight: bold">Epost</td>
+        <td><input type="text" id="epost" onchange="validerEpost(this.value)"/>
+            <span id="feilEpost" style="color: red"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="font-weight: bold">Bord</td>
+        <td><input type="text" id="bord" onchange="validerBord(this.value)"/>
+            <span id="feilBord" style="color: red"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="font-weight: bold">Varer</td>
+        <td><input type="text" id="varer" onchange="validerVarer(this.value)"/>
+            <span id="feilVarer" style="color: red"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td ><button onclick="sendBestilling()">Send Bestilling</button> </td>
+        <td> </td>
+    </tr>
+
+
+</table>
+
+
+<div id="melding" style="color: red"></div>
+
+<script src="index.js"></script>
+</body>
+</html>

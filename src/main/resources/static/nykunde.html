@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NyKunde</title>
+
+    <script src="index.js"></script>
+    <script src="nykunde.js"></script>
+</head>
+<body>
+<h1>Ny Kunde</h1>
+
+<table>
+    <tr>
+        <td>Navn</td>
+        <td><input type="text" id="navn" onchange="validerNavn(this.value)"/>
+         <span id="feilNavn" style="color: hotpink"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mobil</td>
+        <td><input type="number" id="mobil" onchange="validerMobil(this.value)"/>
+            <span id="feilMobil" style="color: hotpink"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td>E-post</td>
+        <td><input type="text" id="epost" onchange="validerEpost(this.value)"/>
+            <span id="feilEpost" style="color: hotpink"></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Passord</td>
+        <td><input type="password" id="passord" />
+        </td>
+    </tr>
+
+    <tr>
+        <td>Passord</td>
+        <td><button onclick="leggKunde()">Legg inn Kunde</button></td>
+    </tr>
+
+</table>
+<div id="melding" style="color: red"></div>
+</body>
+</html>
